@@ -24,7 +24,8 @@ or you can provide your own swagger.json on your host
 <br>
 
 ```
-docker run -p 81:8080 \
+docker run -p 80:8080 \
+--name swagger \
 -e SWAGGER_JSON=/app/swagger/swagger.yml \
 -v $HOME/express-ts-template:/app \
 swaggerapi/swagger-ui
