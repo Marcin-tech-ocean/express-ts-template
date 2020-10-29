@@ -1,0 +1,20 @@
+openapi: 3.0.0
+info:
+  title: Open API for express applications
+  description: Open API for express applications with typescript
+  version: 0.0.1
+servers:
+  - url: http://localhost:4000
+paths:
+  /health-check:
+    get:
+      summary: Health check endpoint
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  ok:
+                    type: boolean
