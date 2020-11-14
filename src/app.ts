@@ -4,7 +4,8 @@ import express from 'express';
 
 const app = express();
 app.use(express.json());
-
+const num: number = 'string';
+console.log(num);
 app.get('/health-check', (_req, res) => {
 	res.json({ ok: true });
 });
